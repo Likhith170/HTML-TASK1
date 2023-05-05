@@ -30,39 +30,117 @@
         margin-left: 20px
 
     }
+    div p{
+        background-color: lightblue;
+        color: black;
+        
+    }
+    div > p{
+        background-color: pink;
+    }
+    div + p{
+        background-color: yellow;
+    }
+    a:hover  {
+    color: hotpink;
+    }
+    dis {
+    background-color: rgb(96, 128, 0);
+    color: white;
+    padding: 20px;
+    text-align: left;
+   }
+
+   dis:hover {
+  background-color: blue;
+   }
+   
+   button:hover{
+    color: rgb(86, 86, 222);
+    background-color: yellow;
+   }
+
+   p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+  }
+   p::first-letter {
+   color: #ff0000;
+   font-size: xx-large;
+  
+  }
+  ::marker { 
+  color: rgb(36, 190, 46);
+  font-size: 23px;
+  }
+  a[target] {
+  background-color: yellow;
+}
+ p.mix {border-style: dotted dashed solid double;}
+ did {
+  border: 5px solid rgb(224, 42, 42);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: rgb(27, 173, 221);
+}
+ abc {
+  background-color: lightgrey;
+  width: 50px;
+  border: 10px solid rgb(240, 107, 18);
+  padding: 30px;
+  margin: 15px;
+}
+div.static {
+  position: static;
+  border: 3px solid #7ec12d;
+}
+div.fixed {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #0d0e0c;
+  background-color: aqua;
+}
+
+
+    
      
     </style>
 </head>
 <body>
     <header>
         <img src="/images/google-fill.png" alt="logo">
-     <div class="center">
+        <div>
      <h1>WELCOME TO GOOGLE</h1>
      
      </div>
      </header>
     <br>
-    <a href="https:www.google.com">
+    <a class ="higlight" href="https:www.google.com" target="_blank">
        <H2>GOOGLE</H2> 
     </a>
-    <P><H3><ins>Content</ins>: </H3>
+    <P><H3 style="color: red;"><ins>Content</ins>: </h3>
     <b>Introduction</b> : Google was founded on September 4, 1998, by <mark>Larry Page</mark> and <mark>Sergey Brin</mark> while they were Ph.D. students at Stanford University in California. Together they own about 14% of its <ins>publicly-listed</ins> shares and control 56% of the <b><i>stockholder</i></b> voting power through super-voting stock. The company went public via an initial public offering (IPO) in 2004
     <br>
     <br>
-    <img src="/images/google.jfif" height="200" width="300">
+    <img src="/images/google.jfif"  height="200" width="300">
     <br>
     <br>
     
-    <div>
+    
     <video controls src="/images/istockphoto-1359576900-640_adpp_is.mp4" width="400">
 
     </video>
-    </div>
+    
     <br>
     <br>
-    <a href="https://google.com" target=_self title="This will take you to GOOGLE">
-        Google Page
-    </a>
+    <b><h2><a href="default.asp" target="_blank">Google</a></h2></b>
+
+    
     <br>
     <br>
     <label for="username">Username:</label>
@@ -74,9 +152,61 @@
     <br><br>
     <input type="submit" value="Submit">
     <br><br>
+    <button>Refresh</button>
+    
     </p>
+    
+    <div><p> Google is good search platform</p>
+         <section><p>Instagram is a good social media</p></section>   
+    </div>
+
+    <p>whatsapp is a good messenger</p>
+    <br>
+    <hr>
+    <div><p>nature things </p>
+        <section><p>social media is a good platform</p></section>   
+    </div>
+    <p>nature beauty</p>
+    <p>world life</p>
+    <p>good day</p>
+    <br>
+
+    <dis>click here</dis>
+    <br><br><br>
+
+    <ul>
+        <li>biscuits</li>
+        <li>meals</li>
+        <li>fruits</li>
+    </ul>
+      <br>
+
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+      <br>
+      <p class="mix">simple text.</p>
+      <br>
+      <did> testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing  </did>
+      <br><br><br><br><br>
+      <abc> testing estingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingestingesting</abc>
+      <br><br><br><br><br>
+      <h1 id="myh1">Hello google</h1>
+      <p class="myp"> this is sentence 1</p>
+      <button id="mybutton">Change up</button>
+      <script src="test1.js"></script>
+      <br><br>
+      <div class="fixed"><a href="default.asp" target="_blank">www.google.com</a>
+        <h1>VISIT GOOGLE</h1>
+        
+        </div>
+
+
+
     <footer>
-        <p>&copy; 2023 Google Page</p>
+        <pqr>&copy; 2023 Google Page</pqr>
     </footer>
     
 
