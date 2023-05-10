@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<STYle>
+    #container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: rgb(255, 132, 0);
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: rgb(30, 0, 255);
+}
+</STYle>
+</head>
+<body>
+    <h1 id="demo">This is the Page</h1>
+    <p class="myClass">This is a paragraph.</p>
+    <p class="myClass">This is another paragraph.</p>
+    
+    <button onclick="changeText()">Click me</button>
+
+    <script>
+      function changeText() {
+        var elements = document.getElementsByClassName("myClass");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].innerHTML = "Hello JavaScript!";
+        }
+      }
+    </script>
+
+
+     <p class="introduction">Hello World!.</p>
+     <p class="introduction">This is the <b>querySelectorAll</b> method.</p>
+    <script>
+        //getElementById
+        let x = document.getElementById("demo")
+        console.log(x);
+
+        
+
+        //getElementsBytagname
+        let z = document.getElementsByTagName("h3")
+        console.log(z);
+        
+        
+        //using CSS
+        const u = document.querySelectorAll("p.introduction");
+        document.getElementById("demo").innerHTML = 
+        'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+      
+     </script>
+
+     <p><button onclick="myMove()">ANIMATE</button></p>
+     <div id="container">
+        <div id="animate"></div>
+        </div>
+
+        <script>
+            //using animations
+        function myMove() {
+            let id = null;
+            const elem = document.getElementById("animate");   
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 4);
+            function frame() {
+              if (pos == 550) {
+                clearInterval(id);
+              } else {
+                pos++; 
+                elem.style.top = pos + "px"; 
+                elem.style.left = pos + "px"; 
+              }
+            }
+          }
+          </script>
+          
+           
+          <h2 onclick="changeText1(this)">Click on this!</h2> 
+          <script>
+          //using events changing the text
+            function changeText1(id) {
+              id.innerHTML = "wow!!";
+            }
+            </script>
+
+
+            <p>Click the button to display the date.</p>
+            <script>
+                // displaying the time
+            function displayDate() {
+              document.getElementById("demo77").innerHTML = Date();
+            }
+            </script>
+            <button onclick="displayDate()">The time is?</button>
+            
+            <p id="demo77"></p>
+
+            <p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
+
+            
+            
+            
+</body>
+</HTML>
