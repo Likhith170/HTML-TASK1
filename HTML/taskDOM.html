@@ -20,6 +20,16 @@
   background: rgb(30, 0, 255);
 }
 </STYle>
+
+<script>
+  function validateForm() {
+    let x = document.forms["myForm1"]["fname1"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+  </script>
 </head>
 <body>
     <h1 id="demo">This is the Page</h1>
@@ -108,9 +118,41 @@
             <p id="p2">Hello World!</p>
 
 <script>
+  //using html styling
 document.getElementById("p2").style.color = "blue";
+document.getElementById("p2").style.fontFamily = "Arial";
 </script>
 
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<button id="myBtn">Try it</button>
+
+<script>
+  //using event listner
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("NEW PAGE??");
+});
+</script>
+<br>
+<br>
+<p><h3>Click the button to change the color of all p elements.</h3></p>
+<button onclick="myFunction()">change colour of text</button>
+
+<script>
+  //using dom collections
+function myFunction() {
+  const myCollection1 = document.getElementsByTagName("h3");
+  for (let i = 0; i < myCollection1.length; i++) {
+    myCollection1[i].style.color = "orange";
+  }
+}
+</script>
             
             
             
